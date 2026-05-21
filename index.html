@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr Mandi Cosmetic Skin Clinic - Demo Package | Clinic Catalyst</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Fahkwang:wght@300;400;500&family=Mulish:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap');
+
+  :root {
+    --cc-dark: #0A2A28;
+    --cc-teal: #00D4BC;
+    --cc-teal-mid: #00B4A0;
+    --chocolate: #33211A;
+    --sage: #94B3A3;
+    --cream: #DEDACF;
+    --off-white: #FAF8F5;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Mulish', sans-serif;
+    background: var(--cc-dark);
+    color: var(--cream);
+    min-height: 100vh;
+  }
+
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 40px;
+  }
+
+  .logo-area {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .cc-label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--cc-teal);
+    margin-bottom: 24px;
+  }
+  .clinic-name {
+    font-family: 'Sacramento', cursive;
+    font-size: 56px;
+    color: var(--cream);
+    line-height: 1.2;
+  }
+  .clinic-sub {
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-top: 4px;
+  }
+  .tagline {
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: rgba(222,218,207,0.6);
+    margin-top: 20px;
+    line-height: 1.5;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+  }
+
+  .link-card {
+    display: block;
+    background: rgba(148,179,163,0.06);
+    border: 1px solid rgba(148,179,163,0.15);
+    padding: 24px 28px;
+    text-decoration: none;
+    color: var(--cream);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .link-card:hover {
+    background: rgba(148,179,163,0.12);
+    border-color: var(--cc-teal);
+    transform: translateY(-2px);
+  }
+  .link-card::after {
+    content: '\2192';
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: var(--cc-teal);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .link-card:hover::after { opacity: 1; }
+
+  .link-card h3 {
+    font-family: 'Fahkwang', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: var(--cream);
+  }
+  .link-card p {
+    font-size: 13px;
+    color: rgba(222,218,207,0.5);
+    line-height: 1.5;
+    padding-right: 30px;
+  }
+  .link-badge {
+    display: inline-block;
+    background: var(--cc-teal);
+    color: var(--cc-dark);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(148,179,163,0.1);
+  }
+  .footer p {
+    font-size: 12px;
+    color: rgba(222,218,207,0.3);
+    line-height: 1.6;
+  }
+  .footer a {
+    color: var(--cc-teal);
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .container { padding: 40px 24px; }
+    .clinic-name { font-size: 40px; }
+    .link-card { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="logo-area">
+    <div class="cc-label">Clinic Catalyst</div>
+    <div class="clinic-name">Dr Mandi</div>
+    <div class="clinic-sub">Cosmetic Skin Clinic</div>
+    <p class="tagline">Your Demo Package - Everything in One Place</p>
+  </div>
+
+  <div class="links">
+    <a href="roadmap.html" class="link-card">
+      <div class="link-badge">Strategy</div>
+      <h3>Your Growth Roadmap</h3>
+      <p>Personalised audit of your digital presence with 20+ actionable recommendations, phased timeline, and investment options.</p>
+    </a>
+
+    <a href="homepage.html" class="link-card">
+      <div class="link-badge">Demo</div>
+      <h3>Demo Homepage</h3>
+      <p>What your website could look like - with concern-based navigation, lead capture, social proof, and a customer journey that converts.</p>
+    </a>
+
+    <a href="landing.html" class="link-card">
+      <div class="link-badge">Demo</div>
+      <h3>PRF Landing Page</h3>
+      <p>A conversion-focused landing page for your PRF Rejuvenation treatment - with your real before-and-after results and empathetic copy.</p>
+    </a>
+
+    <a href="assessment.html" class="link-card">
+      <div class="link-badge">Demo</div>
+      <h3>Interactive Skin Assessment</h3>
+      <p>A 7-question quiz that matches visitors with the right treatments - capturing their name, email, and skin concerns before showing results.</p>
+    </a>
+
+    <a href="scripts.html" class="link-card">
+      <div class="link-badge">Tools</div>
+      <h3>Sales + Follow-Up Scripts</h3>
+      <p>Consultation conversion script, front-of-house lead follow-up templates, SMS sequences, and a post-treatment review request system.</p>
+    </a>
+  </div>
+
+  <div class="footer">
+    <p>Prepared by <a href="https://cliniccatalyst.com.au">Clinic Catalyst</a></p>
+    <p>Kelly Wotherspoon + Alicia Hagen</p>
+    <p style="margin-top: 12px;"><a href="mailto:kelly@aiwithsoul.com.au">kelly@aiwithsoul.com.au</a> &nbsp;|&nbsp; <a href="mailto:alicia@marchingforward.com.au">alicia@marchingforward.com.au</a></p>
+    <p style="margin-top: 20px;">We don't just run ads. We fill clinics.</p>
+  </div>
+</div>
+
+</body>
+</html>
